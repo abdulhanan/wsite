@@ -1,0 +1,568 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+  
+<!-- Mirrored from remtsoy.com/tf_templates/tf-bookify-demo/room-results-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jan 2019 13:26:41 GMT -->
+<head>
+    <title>All Locations</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ </head>
+  <body>
+    
+    <div class="theme-hero-area">
+      <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg ws-action" style="background-image:url({{exp.img.url}});" data-parallax="true"></div>
+        <div class="theme-hero-area-mask theme-hero-area-mask-half"></div>
+      </div>
+      <div class="theme-hero-area-body">
+        <div class="container">
+          <div class="theme-item-page-header _pb-50 _pt-150 theme-item-page-header-white">
+            <div class="theme-item-page-header-body">
+              <div class="theme-item-page-header-rating">
+                <ul class="theme-item-page-header-rating-stars">
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star-half-o"></i>
+                  </li>
+                  <li>
+                    <i class="fa fa-star-o"></i>
+                  </li>
+                </ul>
+                <p class="theme-item-page-header-rating-title">872 reviews</p>
+              </div>
+              <h1 class="theme-item-page-header-title">{{exp.name}}</h1>
+              <a class="btn _tt-uc _ls-0 _mt-30 _p-15 magnific-gallery-link btn-default btn-white" data-items="{{exp.galleryimg.url}},{% static 'img/lxy0fe8_qoi_800x600.jpeg' %},{% static 'img/8rjc2nsuooa_800x600.jpeg' %},{% static 'img/hf4ap1-ef40_800x600.jpeg' %}" href="#">
+                <i class="btn-icon fa fa-camera"></i>Show Photos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-page-section theme-page-section-dark theme-page-section-lg">
+      <div class="container">
+        <div class="row row-col-static" id="sticky-parent" data-gutter="60">
+          <div class="col-md-8 ">
+            <div class="theme-search-area _desk-h theme-search-area-white theme-search-area-vert">
+              <div class="theme-search-area-header _mb-20 theme-search-area-header-sm">
+                <h1 class="theme-search-area-title">$92 per person</h1>
+                <p class="theme-search-area-subtitle">Senectus dolor eu lorem viverra</p>
+              </div>
+              <div class="theme-search-area-form">
+                <div class="theme-search-area-section theme-search-area-section-sm">
+                  <div class="theme-search-area-section-inner">
+                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                    <input class="theme-search-area-section-input datePickerSingle _mob-h" value="Wed 06/27" type="text"/>
+                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-06-27" type="date"/>
+                  </div>
+                </div>
+                <div class="theme-search-area-section theme-search-area-section-sm quantity-selector" data-increment="Guests">
+                  <div class="theme-search-area-section-inner">
+                    <i class="theme-search-area-section-icon lin lin-people"></i>
+                    <input class="theme-search-area-section-input" value="2 Guests" type="text"/>
+                    <div class="quantity-selector-box" id="mobile-ExpSearchGuests">
+                      <div class="quantity-selector-inner">
+                        <p class="quantity-selector-title">Guests</p>
+                        <ul class="quantity-selector-controls">
+                          <li class="quantity-selector-decrement">
+                            <a href="#">&#45;</a>
+                          </li>
+                          <li class="quantity-selector-current">1</li>
+                          <li class="quantity-selector-increment">
+                            <a href="#">&#43;</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="theme-item-page-summary-price _mb-20 theme-item-page-summary-price-white">
+                  <a class="theme-item-page-summary-price-link" href="#summaryPriceCollapseMobile" data-toggle="collapse" aria-expanded="false" aria-controls="summaryPriceCollapseMobile">Show summary</a>
+                  <div class="collapse" id="summaryPriceCollapseMobile">
+                    <ul class="theme-item-page-summary-price-list">
+                      <li class="theme-item-page-summary-price-item">
+                        <h5 class="theme-item-page-summary-price-item-title">2 Guests</h5>
+                        <p class="theme-item-page-summary-price-item-subtitle"></p>
+                        <p class="theme-item-page-summary-price-item-price">$184.00</p>
+                      </li>
+                      <li class="theme-item-page-summary-price-item">
+                        <h5 class="theme-item-page-summary-price-item-title">Service fee</h5>
+                        <p class="theme-item-page-summary-price-item-subtitle"></p>
+                        <p class="theme-item-page-summary-price-item-price">$7.00</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="theme-item-page-summary-price-total">Total
+                    <span>$191.00</span>
+                  </p>
+                </div>
+                <button class="theme-search-area-submit _mt-0 _tt-uc">Book Now</button>
+              </div>
+            </div>
+            <div class="theme-item-page-tabs _mt-mob-30">
+              <div class="tabbable">
+                <ul class="nav nav-tabs nav-white nav-no-br nav-sqr nav-mob-inline" role="tablist">
+                  <li class="active" role="presentation">
+                    <a class="_ph-30" aria-controls="HotelPageTabs-1" role="tab" data-toggle="tab" href="#HotelPageTabs-1">Details</a>
+                  </li>
+                  <li role="presentation">
+                    <a class="_ph-30" aria-controls="HotelPageTabs-2" role="tab" data-toggle="tab" href="#HotelPageTabs-2">Map</a>
+                  </li>
+                  <li role="presentation">
+                    <a class="_ph-30" aria-controls="HotelPageTabs-3" role="tab" data-toggle="tab" href="#HotelPageTabs-3">Reviews</a>
+                  </li>
+                </ul>
+                <div class="tab-content _p-30 _bg-w _bsh-xl">
+                  <div class="tab-pane active" id="HotelPageTabs-1" role="tab-panel">
+                    <div class="theme-item-page-desc">
+                      <p>{{exp.details}}</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="HotelPageTabs-2" role="tab-panel">
+                    <div class="theme-item-page-map google-map" data-lat="31.45" data-lng="73.07"></div>
+                  </div>
+                  <div class="tab-pane" id="HotelPageTabs-3" role="tab-panel">
+                    <div class="theme-reviews">
+                      <div class="theme-reviews-list">
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/adolescent-beanie-casual-cold-295821_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Fri, Jun 22</p>
+                                <p class="theme-reviews-item-author">by Carl Butler</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Class lobortis felis natoque ligula lacus consequat auctor odio aptent lacus cras torquent felis vitae convallis fames gravida ornare nisl elit donec id curabitur suscipit facilisis mi magnis natoque sapien mi penatibus eros sollicitudin eleifend praesent etiam</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/chiara_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Thu, Jun 21</p>
+                                <p class="theme-reviews-item-author">by Elizabeth Wallace</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Dictum id himenaeos aliquam nulla blandit faucibus vivamus tincidunt eleifend in congue facilisi porta pellentesque feugiat cras mattis porttitor egestas vitae feugiat metus semper</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/sevenly_shirts_-_june_2012__2_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Tue, Jun 19</p>
+                                <p class="theme-reviews-item-author">by Keith Churchill</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Cras purus parturient vel suscipit fringilla ullamcorper et pellentesque nisi scelerisque dapibus pellentesque porta potenti habitant placerat nascetur ad nam pellentesque augue morbi amet sodales dolor quis purus hendrerit dapibus tempor</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/luca_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Wed, Jun 13</p>
+                                <p class="theme-reviews-item-author">by Sarah Slater</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Sapien odio bibendum habitant placerat ultricies morbi lectus per ullamcorper nostra morbi justo molestie bibendum tempor fames vehicula enim habitasse lorem egestas dolor dapibus suspendisse purus nec</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/adult-chill-computer-connection-450271_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Fri, Jun 08</p>
+                                <p class="theme-reviews-item-author">by Richard Jones</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Luctus dapibus torquent rutrum consequat cum cras nisi himenaeos gravida rhoncus eleifend blandit habitant blandit auctor turpis ut suscipit congue tellus viverra vulputate proin pellentesque fermentum est erat est habitasse est quam metus cursus molestie orci faucibus pharetra elementum placerat ad accumsan ultrices congue hac accumsan</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/redneck-man-fashion-model_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Sun, Jun 03</p>
+                                <p class="theme-reviews-item-author">by Carol Blevins</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Iaculis mus placerat porttitor sit varius vestibulum dictum dui praesent posuere iaculis erat habitasse placerat urna nisi himenaeos vel non facilisi arcu vitae fames enim elit erat euismod nullam bibendum felis a orci ac porttitor lobortis vehicula pharetra parturient</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/amaze_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Fri, Jun 01</p>
+                                <p class="theme-reviews-item-author">by Blake Hardacre</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Curae faucibus netus nam per convallis duis id hac sem porta venenatis hac nulla suspendisse vestibulum mauris at sit penatibus mi vivamus lectus auctor libero duis eros urna porttitor ultrices hac taciti eleifend vel lacus tristique bibendum parturient euismod leo litora volutpat interdum sit non et sapien convallis fusce nullam</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/fashion-beauty-model-portrait-girl_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Tue, May 29</p>
+                                <p class="theme-reviews-item-author">by Ava McDonald</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Habitant aenean hendrerit fames ligula et imperdiet congue nascetur sociosqu nec mus elit integer cursus metus dolor facilisis suspendisse sit class primis laoreet fringilla phasellus malesuada sagittis tincidunt magna vel adipiscing sodales viverra in cum leo per mollis mus eleifend iaculis cras sapien nullam montes venenatis</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/man-wearing-blue-denim-buttons-up-long-sleeve-and-blace-frame-eyelgasses_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Sun, May 27</p>
+                                <p class="theme-reviews-item-author">by Cheryl Gustin</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-half-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Platea lacinia mauris maecenas felis accumsan lectus gravida suspendisse lacinia proin accumsan tellus interdum morbi lacus orci urna natoque lectus nam consectetur integer</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="theme-reviews-item">
+                          <div class="row" data-gutter="10">
+                            <div class="col-md-3 ">
+                              <div class="theme-reviews-item-info">
+                                <img class="theme-reviews-item-avatar" src="{% static 'img/sevenly_shirts_-_june_2012_70x70.jpg' %}" alt="Image Alternative text" title="Image Title"/>
+                                <p class="theme-reviews-item-date">Reviewed Mon, May 21</p>
+                                <p class="theme-reviews-item-author">by John Mathis</p>
+                              </div>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="theme-reviews-rating">
+                                <ul class="theme-reviews-rating-stars">
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-star-o"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="theme-reviews-item-body">
+                                <p class="theme-reviews-item-text">Egestas a ornare nascetur taciti auctor fames tempor varius potenti lacus iaculis hac hendrerit vehicula scelerisque ultricies at donec odio ut tempor hendrerit imperdiet tristique sodales suscipit nullam purus sodales sociis vestibulum sollicitudin maecenas mollis praesent mus</p>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <div class="row">
+                          <div class="col-md-9 col-md-offset-3">
+                            <a class="theme-reviews-more" href="#">&#x2b; More Reviews</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="sticky-col _mob-h">
+              <div class="theme-search-area theme-search-area-white theme-search-area-vert">
+                <div class="theme-search-area-header _mb-20 theme-search-area-header-sm">
+                  <h1 class="theme-search-area-title">$92 per person</h1>
+                  <p class="theme-search-area-subtitle">Sollicitudin nibh malesuada nam aenean</p>
+                </div>
+                <div class="theme-search-area-form">
+                  <div class="theme-search-area-section theme-search-area-section-sm">
+                    <div class="theme-search-area-section-inner">
+                      <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                      <input class="theme-search-area-section-input datePickerSingle _mob-h" value="Wed 06/27" type="text"/>
+                      <input class="theme-search-area-section-input _desk-h mobile-picker" value="2018-06-27" type="date"/>
+                    </div>
+                  </div>
+                  <div class="theme-search-area-section theme-search-area-section-sm quantity-selector" data-increment="Guests">
+                    <div class="theme-search-area-section-inner">
+                      <i class="theme-search-area-section-icon lin lin-people"></i>
+                      <input class="theme-search-area-section-input" value="2 Guests" type="text"/>
+                      <div class="quantity-selector-box" id="ExpSearchGuests">
+                        <div class="quantity-selector-inner">
+                          <p class="quantity-selector-title">Guests</p>
+                          <ul class="quantity-selector-controls">
+                            <li class="quantity-selector-decrement">
+                              <a href="#">&#45;</a>
+                            </li>
+                            <li class="quantity-selector-current">1</li>
+                            <li class="quantity-selector-increment">
+                              <a href="#">&#43;</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="theme-item-page-summary-price _mb-20 theme-item-page-summary-price-white">
+                    <a class="theme-item-page-summary-price-link" href="#summaryPriceCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="summaryPriceCollapse">Show summary</a>
+                    <div class="collapse" id="summaryPriceCollapse">
+                      <ul class="theme-item-page-summary-price-list">
+                        <li class="theme-item-page-summary-price-item">
+                          <h5 class="theme-item-page-summary-price-item-title">2 Guests</h5>
+                          <p class="theme-item-page-summary-price-item-subtitle"></p>
+                          <p class="theme-item-page-summary-price-item-price">$184.00</p>
+                        </li>
+                        <li class="theme-item-page-summary-price-item">
+                          <h5 class="theme-item-page-summary-price-item-title">Service fee</h5>
+                          <p class="theme-item-page-summary-price-item-subtitle"></p>
+                          <p class="theme-item-page-summary-price-item-price">$7.00</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="theme-item-page-summary-price-total">Total
+                      <span>$191.00</span>
+                    </p>
+                  </div>
+                  <button class="theme-search-area-submit _mt-0 _tt-uc">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </body>
+{% endblock %}
+<!-- Mirrored from remtsoy.com/tf_templates/tf-bookify-demo/exp-page-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jan 2019 13:34:07 GMT -->
+</html>

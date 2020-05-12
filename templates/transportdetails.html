@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- Mirrored from remtsoy.com/tf_templates/tf-bookify-demo/car-index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jan 2019 13:29:08 GMT -->
+<head>
+  <title>Book Transport all over Pakistan</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+  <body>
+    
+    <div class="theme-hero-area">
+      <div class="theme-hero-area-bg-wrap">
+        <div class="theme-hero-area-bg" style="background-image:url({{trans.img.url}});"></div>
+        <div class="theme-hero-area-mask theme-hero-area-mask-strong"></div>
+        <div class="theme-hero-area-inner-shadow"></div>
+      </div>
+      <div class="theme-hero-area-body">
+        <div class="container">
+          <div class="theme-item-page-header _pt-300 _pb-50 _pt-mob-100 theme-item-page-header-white">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="theme-item-page-header-body">
+                  
+                  <h1 class="theme-item-page-header-title _ff-d _fw-200">{{trans.name}}</h1>
+                  <div class="theme-item-page-header-price theme-item-page-header-price-xl">
+                    <p class="theme-item-page-header-price-body">
+                      <b>Rs {{trans.price}}</b>
+                      <span>/ Day</span>
+                    </p>
+                  </div>
+                  
+                  <a class="btn _tt-uc _ls-0 _mt-30 _p-15 magnific-gallery-link btn-default btn-white" data-items="img/room-page/slider/1.jpg,img/room-page/slider/2.jpg,img/room-page/slider/3.jpg,img/room-page/slider/4.jpg,img/room-page/slider/5.jpg,img/room-page/slider/6.jpg,img/room-page/slider/7.jpg' %}" href="#">
+                    <i class="btn-icon fa fa-camera"></i>Show Photos
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="theme-page-section _pv-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="row row-col-static row-eq-height row-col-border" id="sticky-parent" data-gutter="60">
+              <div class="col-md-8 ">
+                
+                
+                <div class="theme-item-page-details _pv-45 theme-item-page-details-first-nm">
+                  <div class="theme-item-page-details-section">
+                    <div class="row">
+                      <div class="col-md-3 ">
+                        <h5 class="theme-item-page-details-section-title">Overview</h5>
+                      </div>
+                      <div class="col-md-9 ">
+                        <div class="theme-item-page-desc">
+                          <p> {{trans.desc}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="theme-item-page-details-section">
+                    <div class="row">
+                      <div class="col-md-3 ">
+                        <h5 class="theme-item-page-details-section-title">The Space</h5>
+                      </div>
+                      <div class="col-md-9 ">
+                        <div class="row">
+                          <div class="col-md-6 ">
+                            <ul class="theme-item-page-details-list">
+                              <li>Accommodates: {{trans.numpeople}}</li>
+                              <li>Mileage: {{trans.mileage}} KM/Liter </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6 ">
+                            <ul class="theme-item-page-details-list">
+                              <li>Timings: 12AM-12AM</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="theme-item-page-details-section">
+                    <div class="row">
+                      <div class="col-md-3 ">
+                        <h5 class="theme-item-page-details-section-title">Amenities</h5>
+                      </div>
+                      <div class="col-md-9 ">
+                        <div class="row">
+                          <div class="col-md-6 ">
+                            <ul class="theme-item-page-details-list theme-item-page-details-list-checked">
+                            {% if trans.ac %}
+                              <li>AC</li>
+                              {% endif %}
+                            </ul>
+                          </div>
+                          <div class="col-md-6 ">
+                            <ul class="theme-item-page-details-list theme-item-page-details-list-checked">
+                              {% if trans.offroad %}
+                              <li>Off-Road</li>
+                              {% endif %}
+                            </ul>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="theme-item-page-details-section">
+                    <div class="row">
+                      <div class="col-md-3 ">
+                        <h5 class="theme-item-page-details-section-title">Rules</h5>
+                      </div>
+                      <div class="col-md-9 ">
+                        <ul class="theme-item-page-details-list _mb-20">
+                          <li>{{trans.rules}}</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+
+              <div class="col-md-4 ">
+                <br>
+                <a class="theme-search-area-submit _mt-0 _tt-uc theme-search-area-submit-curved" href="/transport/book/{{trans.slug}}">Book Now</a>
+                </div>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    {% endblock %}
+
+    
+<!-- Mirrored from remtsoy.com/tf_templates/tf-bookify-demo/car-results-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jan 2019 13:31:07 GMT -->
+</html>

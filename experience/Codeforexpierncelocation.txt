@@ -1,0 +1,41 @@
+
+from django.shortcuts import render
+from .models import cat,experience
+from locations.models import location
+# Create your views here.
+def index(request):
+    cats=cat.objects.all()
+    exp = experience.objects.values_list('location', flat=True)
+    unique=[]
+    locationn=[]
+    images=[]
+    for ex in exp:
+        if ex not in unique:
+            unique.append(ex)
+    #print(unique)
+
+    for un in unique:
+      # print(un)
+       getimage = location.objects.all().filter(id= un)
+       images.append((getimage[0].img))
+    print(images)
+   # for nn in getimage:
+     #print (nn.name)
+  
+    for ex in unique:
+        exp = location.objects.get(id=ex)
+        locationn.append(exp)
+    #print(locationn)
+    return render(request,"experiencelist.html", {'cat':cats, 'images': images, 'locat':locationn} )
+
+def categories(request):
+    cats=cat.objects.all()
+    return render(request,"experiencecategorieslist.html", {'cat':cats} )
+
+
+def details(request, slug):
+    slugg=slug.lower()
+    exp = experience.objects.get(slug=slugg)
+    return render(request,"experiencedetails.html", {'exp': exp})
+    
+
